@@ -1,0 +1,227 @@
+2024-08-20 12:47:11.658 BST [11244] LOG:  starting PostgreSQL 14.13 (Homebrew) on x86_64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.202), 64-bit
+2024-08-20 12:47:11.660 BST [11244] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-08-20 12:47:11.660 BST [11244] LOG:  listening on IPv6 address "::1", port 5432
+2024-08-20 12:47:11.660 BST [11244] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-08-20 12:47:11.665 BST [11245] LOG:  database system was shut down at 2024-08-20 12:46:39 BST
+2024-08-20 12:47:11.669 BST [11244] LOG:  database system is ready to accept connections
+2024-08-20 12:47:19.004 BST [11255] FATAL:  role "postgres" does not exist
+2024-08-20 12:47:42.468 BST [11494] FATAL:  role "postgres" does not exist
+2024-08-20 12:48:57.082 BST [11513] FATAL:  database "ollieharding" does not exist
+2024-08-20 12:49:13.956 BST [11525] FATAL:  role "adfluencer" does not exist
+2024-08-20 12:51:32.159 BST [11583] FATAL:  database "ollieharding" does not exist
+2024-08-20 12:52:16.294 BST [11593] FATAL:  database "adfluencer" does not exist
+2024-08-20 12:57:37.272 BST [11671] FATAL:  database "ollieharding" does not exist
+2024-08-20 12:57:45.751 BST [11678] FATAL:  database "adfluencer" does not exist
+2024-08-20 12:57:54.447 BST [11683] FATAL:  database "adfluencer.db" does not exist
+2024-08-20 12:59:02.297 BST [11701] FATAL:  role "postgres" does not exist
+2024-08-20 13:00:19.883 BST [11719] FATAL:  database "adfluencer.db" does not exist
+2024-08-20 13:00:36.638 BST [11737] FATAL:  database "ollieharding" does not exist
+2024-08-20 13:01:12.705 BST [11746] FATAL:  database "ollieharding" does not exist
+2024-08-20 13:26:18.965 BST [12350] LOG:  starting PostgreSQL 14.13 (Homebrew) on x86_64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.202), 64-bit
+2024-08-20 13:26:18.966 BST [12350] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2024-08-20 13:26:18.966 BST [12350] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2024-08-20 13:26:18.967 BST [12350] LOG:  could not bind IPv6 address "::1": Address already in use
+2024-08-20 13:26:18.967 BST [12350] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2024-08-20 13:26:18.967 BST [12350] WARNING:  could not create listen socket for "localhost"
+2024-08-20 13:26:18.967 BST [12350] FATAL:  could not create any TCP/IP sockets
+2024-08-20 13:26:18.967 BST [12350] LOG:  database system is shut down
+2024-08-20 13:28:20.302 BST [12626] LOG:  starting PostgreSQL 14.13 (Homebrew) on x86_64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.202), 64-bit
+2024-08-20 13:28:20.304 BST [12626] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2024-08-20 13:28:20.304 BST [12626] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2024-08-20 13:28:20.304 BST [12626] LOG:  could not bind IPv6 address "::1": Address already in use
+2024-08-20 13:28:20.304 BST [12626] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2024-08-20 13:28:20.304 BST [12626] WARNING:  could not create listen socket for "localhost"
+2024-08-20 13:28:20.304 BST [12626] FATAL:  could not create any TCP/IP sockets
+2024-08-20 13:28:20.304 BST [12626] LOG:  database system is shut down
+2024-08-20 13:30:04.958 BST [12887] FATAL:  role "postgres" does not exist
+2024-08-20 13:32:16.431 BST [12966] FATAL:  database "ollieharding" does not exist
+2024-08-20 13:36:05.530 BST [13554] FATAL:  role "postgres" does not exist
+2024-08-20 13:43:35.053 BST [14884] FATAL:  database "adfluencer" does not exist
+2024-08-20 13:44:11.229 BST [14903] FATAL:  database "adfluencer" does not exist
+2024-08-20 13:47:54.891 BST [14986] ERROR:  syntax error at or near "PRAGMA" at character 1
+2024-08-20 13:47:54.891 BST [14986] STATEMENT:  PRAGMA foreign_keys=OFF;
+2024-08-20 13:50:31.100 BST [15099] ERROR:  syntax error at or near "PRAGMA" at character 1
+2024-08-20 13:50:31.100 BST [15099] STATEMENT:  PRAGMA foreign_keys=OFF;
+2024-08-20 18:59:26.760 BST [14952] ERROR:  syntax error at or near "Last" at character 1
+2024-08-20 18:59:26.760 BST [14952] STATEMENT:  Last login: Tue Aug 20 06:42:07 on console
+	ollieharding@OLLIEs-Mac-Pro ~ % cd
+	ollieharding@OLLIEs-Mac-Pro ~ % ls
+	Applications
+	Creative Cloud Files Personal Account OLLIEHARDING@MAC.COM 31E441533FA4D380992016B7@AdobeID
+	DYMO Connect
+	Desktop
+	Documents
+	Downloads
+	Dropbox
+	Library
+	Movies
+	Music
+	Pictures
+	Public
+	raxo_copy.html
+	style.css
+	ollieharding@OLLIEs-Mac-Pro ~ % git status
+	fatal: not a git repository (or any of the parent directories): .git
+	ollieharding@OLLIEs-Mac-Pro ~ % git init
+	Initialized empty Git repository in /Users/ollieharding/.git/
+	ollieharding@OLLIEs-Mac-Pro ~ % git status
+	warning: could not open directory '.Trash/': Operation not permitted
+	On branch main
+	
+	No commits yet
+	
+	Untracked files:
+	  (use "git add <file>..." to include in what will be committed)
+		.CFUserTextEncoding
+		.DS_Store
+		.adobe/
+		.config/
+		.cups/
+		.dropbox/
+		.local/
+		.npm/
+		.vscode/
+		.zsh_history
+		.zsh_sessions/
+		Applications/
+		Creative Cloud Files Personal Account OLLIEHARDING@MAC.COM 31E441533FA4D380992016B7@AdobeID/
+		DYMO Connect/
+		Desktop/
+		Documents/
+		Downloads/
+		Dropbox/
+		Library/
+		Movies/
+		Music/
+		Pictures/
+		Public/
+		raxo_copy.html
+		style.css
+	
+	
+	It took 4.36 seconds to enumerate untracked files. 'status -uno'
+	may speed it up, but you have to be careful not to forget to add
+	new files yourself (see 'git help status').
+	nothing added to commit but untracked files present (use "git add" to track)
+	ollieharding@OLLIEs-Mac-Pro ~ % mkdir users/luke/SwiftLink/experimental/adfluencer
+	mkdir: users/luke/SwiftLink/experimental: No such file or directory
+	ollieharding@OLLIEs-Mac-Pro ~ % mkdir -p users/luke/SwiftLink/experimental/adfluencer
+	ollieharding@OLLIEs-Mac-Pro ~ % cd users/luke/SwiftLink/experimental/adfluencer
+	ollieharding@OLLIEs-Mac-Pro adfluencer % git clone https://github.com/Yash-Pratapwar/AdFluencer.git
+	Cloning into 'AdFluencer'...
+	remote: Enumerating objects: 1133, done.
+	remote: Counting objects: 100% (89/89), done.
+	remote: Compressing objects: 100% (70/70), done.
+	remote: Total 1133 (delta 38), reused 33 (delta 17), pack-reused 1044 (from 1)
+	Receiving objects: 100% (1133/1133), 37.23 MiB | 6.31 MiB/s, done.
+	Resolving deltas: 100% (639/639), done.
+	ollieharding@OLLIEs-Mac-Pro adfluencer % code .
+	zsh: command not found: code
+	ollieharding@OLLIEs-Mac-Pro adfluencer % python apprun.py
+	zsh: command not found: python
+	ollieharding@OLLIEs-Mac-Pro adfluencer % python3 apprun.py
+	/Library/Developer/CommandLineTools/usr/bin/python3: can't open file '/Users/ollieharding/users/luke/SwiftLink/experimental/adfluencer/apprun.py': [Errno 2] No such file or directory
+	ollieharding@OLLIEs-Mac-Pro adfluencer % ls
+	AdFluencer
+	ollieharding@OLLIEs-Mac-Pro adfluencer % cd AdFluencer
+	ollieharding@OLLIEs-Mac-Pro AdFluencer % ls
+	Adfluencer_package	apprun.py		requirements.txt
+	Procfile		rec_sys copy.py		runtime.txt
+	README.md		rec_sys.py		sql_copy.py
+	ollieharding@OLLIEs-Mac-Pro AdFluencer % python3 apprun.py
+	Traceback (most recent call last):
+	  File "/Users/ollieharding/users/luke/SwiftLink/experimental/adfluencer/AdFluencer/apprun.py", line 1, in <module>
+	    from Adfluencer_package import create_app
+	  File "/Users/ollieharding/users/luke/SwiftLink/experimental/adfluencer/AdFluencer/Adfluencer_package/__init__.py", line 1, in <module>
+	    from flask import Flask, app
+	ModuleNotFoundError: No module named 'flask'
+	ollieharding@OLLIEs-Mac-Pro AdFluencer % pip install -r requirements.txt
+	zsh: command not found: pip
+	ollieharding@OLLIEs-Mac-Pro AdFluencer % pip3 install -r requirements.txt
+	Defaulting to user installation because normal site-packages is not writeable
+	Collecting click
+	  Downloading click-8.1.7-py3-none-any.whl (97 kB)
+	     |████████████████████████████████| 97 kB 1.8 MB/s 
+	Collecting colorama
+	  Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+	Collecting Flask
+	  Downloading flask-3.0.3-py3-none-any.whl (101 kB)
+	     |████████████████████████████████| 101 kB 4.3 MB/s 
+	Collecting Flask-Login
+	  Downloading Flask_Login-0.6.3-py3-none-any.whl (17 kB)
+	Collecting Flask-SQLAlchemy
+	  Downloading flask_sqlalchemy-3.1.1-py3-none-any.whl (25 kB)
+	Collecting greenlet
+	  Downloading greenlet-3.0.3-cp39-cp39-macosx_11_0_universal2.whl (269 kB)
+	     |████████████████████████████████| 269 kB 6.3 MB/s 
+	Collecting gunicorn
+	  Downloading gunicorn-23.0.0-py3-none-any.whl (85 kB)
+	     |████████████████████████████████| 85 kB 4.0 MB/s 
+	Collecting itsdangerous
+	  Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+	Collecting Jinja2
+	  Downloading jinja2-3.1.4-py3-none-any.whl (133 kB)
+	     |████████████████████████████████| 133 kB 4.8 MB/s 
+	Collecting MarkupSafe
+	  Downloading MarkupSafe-2.1.5-cp39-cp39-macosx_10_9_x86_64.whl (14 kB)
+	Collecting psycopg2-binary
+	  Downloading psycopg2_binary-2.9.9-cp39-cp39-macosx_10_9_x86_64.whl (2.8 MB)
+	     |████████████████████████████████| 2.8 MB 4.5 MB/s 
+	Collecting SQLAlchemy
+	  Downloading SQLAlchemy-2.0.32-cp39-cp39-macosx_10_9_x86_64.whl (2.1 MB)
+	     |████████████████████████████████| 2.1 MB 6.7 MB/s 
+	Collecting Werkzeug
+	  Downloading werkzeug-3.0.3-py3-none-any.whl (227 kB)
+	     |████████████████████████████████| 227 kB 7.7 MB/s 
+	Collecting blinker>=1.6.2
+	  Downloading blinker-1.8.2-py3-none-any.whl (9.5 kB)
+	Collecting importlib-metadata>=3.6.0
+	  Downloading importlib_metadata-8.3.0-py3-none-any.whl (26 kB)
+	Collecting packaging
+	  Downloading packaging-24.1-py3-none-any.whl (53 kB)
+	     |████████████████████████████████| 53 kB 2.9 MB/s 
+	Requirement already satisfied: typing-extensions>=4.6.0 in /Users/ollieharding/Library/Python/3.9/lib/python/site-packages (from SQLAlchemy->-r requirements.txt (line 12)) (4.8.0)
+	Collecting zipp>=0.5
+	  Downloading zipp-3.20.0-py3-none-any.whl (9.4 kB)
+	Installing collected packages: zipp, MarkupSafe, Werkzeug, Jinja2, itsdangerous, importlib-metadata, greenlet, click, blinker, SQLAlchemy, packaging, Flask, psycopg2-binary, gunicorn, Flask-SQLAlchemy, Flask-Login, colorama
+	  WARNING: The script flask is installed in '/Users/ollieharding/Library/Python/3.9/bin' which is not on PATH.
+	  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+	  WARNING: The script gunicorn is installed in '/Users/ollieharding/Library/Python/3.9/bin' which is not on PATH.
+	  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+	Successfully installed Flask-3.0.3 Flask-Login-0.6.3 Flask-SQLAlchemy-3.1.1 Jinja2-3.1.4 MarkupSafe-2.1.5 SQLAlchemy-2.0.32 Werkzeug-3.0.3 blinker-1.8.2 click-8.1.7 colorama-0.4.6 greenlet-3.0.3 gunicorn-23.0.0 importlib-metadata-8.3.0 itsdangerous-2.2.0 packaging-24.1 psycopg2-binary-2.9.9 zipp-3.20.0
+	WARNING: You are using pip version 21.2.4; however, version 24.2 is available.
+	You should consider upgrading via the '/Library/Developer/CommandLineTools/usr/bin/python3 -m pip install 
+	ollieharding@OLLIEs-Mac-Pro AdFluencer % python3 apprun.py               
+	Traceback (most recent call last):
+	  File "/Users/ollieharding/users/luke/SwiftLink/experimental/adfluencer/AdFluencer/apprun.py", line 3, in <module>
+	    app = create_app()
+	  File "/Users/ollieharding/users/luke/SwiftLink/experimental/adfluencer/AdFluencer/Adfluencer_package/__init__.py", line 28, in create_app
+	    from Adfluencer_package.views import views
+	  File "/Users/ollieharding/users/luke/SwiftLink/experimental/adfluencer/AdFluencer/Adfluencer_package/views.py", line 12, in <module>
+	    import rec_sys as model
+	  File "/Users/ollieharding/users/luke/SwiftLink/experimental/adfluencer/AdFluencer/rec_sys.py", line 1, in <module>
+	    import pandas as pd
+	ModuleNotFoundError: No module named 'pandas'
+	ollieharding@OLLIEs-Mac-Pro AdFluencer % pip3 install pandas
+	Defaulting to user installation because normal site-packages is not writeable
+	Collecting pandas
+	  Downloading pandas-2.2.2-cp39-cp39-macosx_10_9_x86_64.whl (12.6 MB)
+	     |████████████████████████████████| 12.6 MB 6.2 MB/s 
+	Collecting python-dateutil>=2.8.2
+	  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+	     |████████████████████████████████| 229 kB 7.3 MB/s 
+	Collecting numpy>=1.22.4
+	  Downloading numpy-2.0.1-cp39-cp39-macosx_10_9_x86_64.whl (21.2 MB)
+	     |████████████████████████████████| 21.2 MB 10.0 MB/s 
+	Collecting tzdata>=2022.7
+	  Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+	     |████████████████████████████████| 345 kB 6.9 MB/s 
+	Collecting pytz>=2020.1
+	  Downloading pytz-2024.1-py2.py3-none-any.whl (505 kB)
+	     |████████████████████████████████| 505 kB 6.0 MB/s 
+	Requirement already satisfied: six>=1.5 in /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages (from python-dateutil>=2.8.2->pandas) (1.15.0)
+	Installing collected packages: tzdata, pytz, python-dateutil, numpy, pandas
+	  WARNING: The scripts f2py and numpy-config are installed in '/Users/ollieharding/Library/Python/3.9/bin' which is not on PATH.
+	  Consider adding this directory to PATH or, if you prefer to suppress this warning, use 
+	Successfully installed numpy-2.0.1 pandas-2.2.2 python-dateutil-2.9.0.post0 pytz-2024.1 tzdata-2024.1
+	WARNING: You are using pip version 21.2.4;

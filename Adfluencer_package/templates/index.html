@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<title>AdFluencer</title>
-	<meta content="" name="description">
-	<meta content="" name="keywords">
+	<title>SwiftLink - Connecting Athletes with Brands and Opportunities</title>
+	<meta name="description" content="SwiftLink is a premier platform that connects elite athletes with top brands, providing unique endorsement opportunities and brand partnerships.">
+	<meta name="keywords" content="SwiftLink, Athletes, Brand Endorsement, Sports Marketing, Athlete Sponsorship, Athlete Portal, Athlete Branding">
 
 	<!-- Favicons -->
 	<link href="{{url_for('static', filename='img/Logo_1.png')}}" rel="icon">
@@ -15,7 +15,7 @@
 
 	<!-- Google Fonts -->
 	<link
-		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
 		rel="stylesheet">
 
 	<!-- Vendor CSS Files -->
@@ -30,19 +30,38 @@
 	<link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
 
 	<!-- Including jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js">
-	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
 	<!-- Including Bootstrap JS -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
-	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-
-
 	<div class="wrap">
+
+		<!-- ======= Header ======= -->
+		<header id="header" class="d-flex align-items-center">
+			<div class="container d-flex align-items-center justify-content-between">
+
+				<div class="logo">
+					<h1 class="text-light"><a href="{{url_for('views.home')}}"><span>SwiftLink</span></a></h1>
+				</div>
+
+				<nav id="navbar" class="navbar">
+					<ul>
+						<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+						<li><a class="nav-link scrollto" href="#about">About</a></li>
+						<li><a class="nav-link scrollto" href="#services">Services</a></li>
+						<li><a class="nav-link scrollto" href="#team">Brands</a></li>
+						<li><a href="{{url_for('views.login')}}">Login/Sign-up</a></li>
+						<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+					</ul>
+					<i class="bi bi-list mobile-nav-toggle"></i>
+				</nav><!-- .navbar -->
+
+			</div>
+		</header><!-- End Header -->
 
 		<!-- ======= Hero Section ======= -->
 		<section id="hero">
@@ -55,41 +74,18 @@
 
 			<script type="text/javascript">
 				setTimeout(function () {
-
 					// Closing the alert
 					$('.alert').alert('close');
 				}, 3000);
 			</script>
 
 			<div class="hero-container" data-aos="fade-up">
-				<h1>Promote To Propogate <br><span>With</span><br><span>Adfluencer</span></h1>
-				<!-- <h2>We are a team of college students </h2> -->
+				<h1>SWIFTLINK</h1>
+				<p style="color: white;">Connecting Athletes to Opportunities for Success Beyond Sport.</p>
 				<a href="#about" class="btn-get-started scrollto">Get Started</a>
 			</div>
+			
 		</section><!-- End Hero -->
-
-		<!-- ======= Header ======= -->
-		<header id="header" class="d-flex align-items-center">
-			<div class="container d-flex align-items-center justify-content-between">
-
-				<div class="logo">
-					<h1 class="text-light"><a href="{{url_for('views.home')}}"><span>AdFluencer</span></a></h1>					
-				</div>
-
-				<nav id="navbar" class="navbar">
-					<ul>
-						<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-						<li><a class="nav-link scrollto" href="#about">About</a></li>
-						<li><a class="nav-link scrollto" href="#services">Services</a></li>						
-						<li><a class="nav-link scrollto" href="#team">Brands</a></li>
-						<li><a href="{{url_for('views.login')}}">Login/Sign-up</a></li>
-						<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-					</ul>
-					<i class="bi bi-list mobile-nav-toggle"></i>
-				</nav><!-- .navbar -->
-
-			</div>
-		</header><!-- End Header -->
 
 		<main id="main">
 
@@ -98,36 +94,35 @@
 				<div class="container">
 
 					<div class="row">
-						<div style="background-image: url(../static/img/about2.png)" data-aos="fade-right"
+						<div style="background-image: url(../static/img/jeremy-bishop-surfing-unsplash.jpg)" data-aos="fade-right"
 							class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
 						</div>
 						<div class="col-xl-7 pt-4 pt-lg-0 d-flex align-items-stretch">
 							<div class="content d-flex flex-column justify-content-center" data-aos="fade-left">
-								<h3>Promote The Products Unique Way</h3>
+								<h3>Bridging Athletes and Brands</h3>
 								<p>
-									AdFluencers is the way to mind and thought of every common man from creative Creator
-									among themselves!! Who Knows You Better than a person amongst You!!
+									SwiftLink connects athletes with brands, unlocking unique endorsement and partnership opportunities that leverage the power of sports.
 								</p>
 								<div class="row">
 									<div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
 										<i class="bx bx-receipt"></i>
 										<h4>Regular Updates</h4>
-										<p>Registered Adfluencers will get Regular Advertising Updates </p>
+										<p>Athletes receive regular updates on new brand partnership opportunities.</p>
 									</div>
 									<div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
 										<i class="bx bx-cube-alt"></i>
-										<h4>Great Brands</h4>
-										<p>Brand Endorsement Opportunities from renowned Companies</p>
+										<h4>Top Brands</h4>
+										<p>Collaborate with leading brands in the industry.</p>
 									</div>
 									<div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
 										<i class="bx bx-images"></i>
-										<h4>Follower Check</h4>
-										<p>Allocation of Brands to the Adfluencer according to their Social Reach</p>
+										<h4>Tailored Partnerships</h4>
+										<p>Brands are matched with athletes whose values align with their message.</p>
 									</div>
 									<div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="400">
 										<i class="bx bx-shield"></i>
 										<h4>Verified Deals</h4>
-										<p>Both Brands and AdFluencers are authenticated </p>
+										<p>All partnerships are verified for authenticity and transparency.</p>
 									</div>
 								</div>
 							</div><!-- End .content-->
@@ -144,32 +139,27 @@
 					<div class="row">
 
 						<div class="col-lg-2 col-md-4 col-6">
-							<img src="../static/img/clients/coin.png" class="img-fluid" alt="" data-aos="zoom-in">
+							<img src="../static/img/clients/coin.png" class="img-fluid" alt="CoinBrand Logo" data-aos="zoom-in">
 						</div>
 
 						<div class="col-lg-2 col-md-4 col-6">
-							<img src="../static/img/clients/coinswitch.jfif" class="img-fluid" alt="" data-aos="zoom-in"
-								data-aos-delay="100">
+							<img src="../static/img/clients/coinswitch.jfif" class="img-fluid" alt="CoinSwitch Logo" data-aos="zoom-in" data-aos-delay="100">
 						</div>
 
 						<div class="col-lg-2 col-md-4 col-6">
-							<img src="../static/img/clients/flo.png" class="img-fluid" alt="" data-aos="zoom-in"
-								data-aos-delay="200">
+							<img src="../static/img/clients/flo.png" class="img-fluid" alt="FloBrand Logo" data-aos="zoom-in" data-aos-delay="200">
 						</div>
 
 						<div class="col-lg-2 col-md-4 col-6">
-							<img src="../static/img/clients/mama earth.png" class="img-fluid" alt="" data-aos="zoom-in"
-								data-aos-delay="300">
+							<img src="../static/img/clients/mama earth.png" class="img-fluid" alt="Mama Earth Logo" data-aos="zoom-in" data-aos-delay="300">
 						</div>
 
 						<div class="col-lg-2 col-md-4 col-6">
-							<img src="../static/img/clients/wow.png" class="img-fluid" alt="" data-aos="zoom-in"
-								data-aos-delay="400">
+							<img src="../static/img/clients/wow.png" class="img-fluid" alt="WOW Products Logo" data-aos="zoom-in" data-aos-delay="400">
 						</div>
 
 						<div class="col-lg-2 col-md-4 col-6">
-							<img src="../static/img/clients/labdoor.png" class="img-fluid" alt="" data-aos="zoom-in"
-								data-aos-delay="500">
+							<img src="../static/img/clients/labdoor.png" class="img-fluid" alt="Labdoor Logo" data-aos="zoom-in" data-aos-delay="500">
 						</div>
 
 					</div>
@@ -184,35 +174,31 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
 							<div class="card" data-aos="fade-up">
-								<img src="../static/img/features-1.jpg" class="card-img-top" alt="...">
+								<img src="../static/img/features-1.jpg" class="card-img-top" alt="SwiftLink Mission">
 								<div class="card-body">
 									<i class="bx bx-tachometer"></i>
-									<h5 class="card-title"><a href="">Our Mission</a></h5>
-									<p class="card-text">To Empower every economic level of society with the power of
-										internet, By providing them source of revenue with the help of there own
-										creative Inovations. </p>
+									<h5 class="card-title"><a href="#">Our Mission</a></h5>
+									<p class="card-text">Empowering athletes to connect with brands and unlock new revenue streams through strategic partnerships.</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 mt-5 mt-md-0 d-flex align-items-stretch">
 							<div class="card" data-aos="fade-up" data-aos-delay="150">
-								<img src="../static/img/features-2.jpg" class="card-img-top" alt="...">
+								<img src="../static/img/features-2.jpg" class="card-img-top" alt="SwiftLink Plan">
 								<div class="card-body">
 									<i class="bx bx-file"></i>
-									<h5 class="card-title"><a href="">Our Plan</a></h5>
-									<p class="card-text"> Give Oppurtunities to Every type of social media Influencer to
-										Earn Money with the help of Brand Endorsement. </p>
+									<h5 class="card-title"><a href="#">Our Plan</a></h5>
+									<p class="card-text">Providing athletes with opportunities to collaborate with brands that align with their personal brand and values.</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 mt-5 mt-lg-0 d-flex align-items-stretch">
 							<div class="card" data-aos="fade-up" data-aos-delay="300">
-								<img src="../static/img/features-3.jpg" class="card-img-top" alt="...">
+								<img src="../static/img/features-3.jpg" class="card-img-top" alt="SwiftLink Vision">
 								<div class="card-body">
 									<i class="bx bx-show"></i>
-									<h5 class="card-title"><a href="">Our Vision</a></h5>
-									<p class="card-text"> Make Maximum Possible Links Between Every level of Influencers
-										and from local to High Profit Companies. </p>
+									<h5 class="card-title"><a href="#">Our Vision</a></h5>
+									<p class="card-text">To become the leading platform where athletes and brands collaborate for mutual growth and success.</p>
 								</div>
 							</div>
 						</div>
@@ -226,7 +212,8 @@
 				<div class="container">
 
 					<div class="text-center" data-aos="zoom-in">
-						<h3>Call for Details</h3>						
+						<h3>Get in Touch</h3>
+						<p>Interested in partnering with top athletes? Contact us today to explore the opportunities.</p>
 						<a class="cta-btn" href="#contact">Contact</a>
 					</div>
 
@@ -238,30 +225,30 @@
 				<div class="container">
 
 					<div class="section-title" data-aos="fade-down">
-						<span>Why Us?</span>
-						<h2>Why Us?</h2>						
+						<span>Why Choose SwiftLink?</span>
+						<h2>Why Choose SwiftLink?</h2>
 					</div>
 
 					<div class="row">
 						<div class="col-md-6">
 							<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
 								<i class="bi bi-briefcase" style="color: #0ea5e0;"></i>
-								<h4><a href="#">Secure Profiles</a></h4>
-								<p>Authenticated Brand and Adfluencer Details</p>
+								<h4><a href="#">Verified Profiles</a></h4>
+								<p>We ensure that all athlete and brand profiles are authenticated for credibility.</p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="icon-box" data-aos="fade-up" data-aos-delay="200">
 								<i class="bi bi-card-checklist" style="color: #07cc70;"></i>
-								<h4><a href="#">Weekly Updates</a></h4>
-								<p>New Oppurtunities Every Week</p>
+								<h4><a href="#">Regular Opportunities</a></h4>
+								<p>New partnership opportunities are available every week.</p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="icon-box" data-aos="fade-up" data-aos-delay="300">
 								<i class="bi bi-bar-chart" style="color: #e40373;"></i>
-								<h4><a href="#">Growth</a></h4>
-								<p>Your products sale will increase exponentially</p>
+								<h4><a href="#">Exponential Growth</a></h4>
+								<p>Boost your brand’s visibility and sales with strategic athlete partnerships.</p>
 							</div>
 						</div>
 					</div>
@@ -278,12 +265,12 @@
 
 					<div class="swiper-slide">
 						<div class="testimonial-item">
-							<img src="../static/img/testimonials/ash.jfif" class="testimonial-img" alt="">
+							<img src="../static/img/testimonials/ash.jfif" class="testimonial-img" alt="Athlete testimonial from Ashish Chanchlani">
 							<h3>Ashish Chanchlani</h3>
-							<h4>Youtube &amp; Content Creator</h4>
+							<h4>Professional Athlete & Influencer</h4>
 							<p>
 								<i class="bx bxs-quote-alt-left quote-icon-left"></i>
-								Content for youth
+								SwiftLink connected me with brands that align with my values, creating successful partnerships.
 								<i class="bx bxs-quote-alt-right quote-icon-right"></i>
 							</p>
 						</div>
@@ -291,12 +278,12 @@
 
 					<div class="swiper-slide">
 						<div class="testimonial-item">
-							<img src="../static/img/testimonials/bhuv.jfif" class="testimonial-img" alt="">
+							<img src="../static/img/testimonials/bhuv.jfif" class="testimonial-img" alt="Athlete testimonial from Bhuvan Bam">
 							<h3>Bhuvan Bam</h3>
-							<h4>Youtube creator</h4>
+							<h4>Sports Enthusiast & Influencer</h4>
 							<p>
 								<i class="bx bxs-quote-alt-left quote-icon-left"></i>
-								youngest content creator One man army
+								SwiftLink made it easy to find the right brands to work with, boosting my career.
 								<i class="bx bxs-quote-alt-right quote-icon-right"></i>
 							</p>
 						</div>
@@ -304,12 +291,12 @@
 
 					<div class="swiper-slide">
 						<div class="testimonial-item">
-							<img src="../static/img/testimonials/praj.jfif" class="testimonial-img" alt="">
-							<h3>Prajakta koli</h3>
-							<h4>Youtube Creator</h4>
+							<img src="../static/img/testimonials/praj.jfif" class="testimonial-img" alt="Athlete testimonial from Prajakta Koli">
+							<h3>Prajakta Koli</h3>
+							<h4>Athlete & Content Creator</h4>
 							<p>
 								<i class="bx bxs-quote-alt-left quote-icon-left"></i>
-								Successful Solopreneur in young age
+								Thanks to SwiftLink, I’ve partnered with brands that enhance my public image and professional reach.
 								<i class="bx bxs-quote-alt-right quote-icon-right"></i>
 							</p>
 						</div>
@@ -317,12 +304,12 @@
 
 					<div class="swiper-slide">
 						<div class="testimonial-item">
-							<img src="../static/img/testimonials/nisha.jfif" class="testimonial-img" alt="">
+							<img src="../static/img/testimonials/nisha.jfif" class="testimonial-img" alt="Athlete testimonial from Nisha Madhulika">
 							<h3>Nisha Madhulika</h3>
-							<h4>Indian chef & Youtuber </h4>
+							<h4>Renowned Athlete & Mentor</h4>
 							<p>
 								<i class="bx bxs-quote-alt-left quote-icon-left"></i>
-								First Succesful Indian Food channel
+								SwiftLink has been instrumental in connecting me with top-tier brands for long-term partnerships.
 								<i class="bx bxs-quote-alt-right quote-icon-right"></i>
 							</p>
 						</div>
@@ -330,12 +317,12 @@
 
 					<div class="swiper-slide">
 						<div class="testimonial-item">
-							<img src="../static/img/testimonials/gau.jfif" class="testimonial-img" alt="">
+							<img src="../static/img/testimonials/gau.jfif" class="testimonial-img" alt="Athlete testimonial from Gaurav Taneja">
 							<h3>Gaurav Taneja</h3>
-							<h4>Vlogger</h4>
+							<h4>Professional Athlete & Vlogger</h4>
 							<p>
 								<i class="bx bxs-quote-alt-left quote-icon-left"></i>
-								Daily Vlogger on youtube
+								With SwiftLink, I’ve found perfect brand partners that resonate with my athletic journey.
 								<i class="bx bxs-quote-alt-right quote-icon-right"></i>
 							</p>
 						</div>
@@ -355,54 +342,54 @@
 			<div class="section-title" data-aos="fade-down">
 				<span>Brands</span>
 				<h2>Brands</h2>
-				<p>These are some of the brands parterned with us.</p>
+				<p>These are some of the top brands partnered with SwiftLink.</p>
 			</div>
 
 			<div class="row">
 
 				<div class="col-xl-3 col-lg-4 col-md-6">
 					<div class="member" data-aos="fade-up" data-aos-delay="100">
-						<img src="../static/img/team/mivi2.png" class="img-fluid" alt="">
+						<img src="../static/img/team/mivi2.png" class="img-fluid" alt="Mivi Brand">
 						<div class="member-info">
 							<div class="member-info-content">
-								<h4>mivi</h4>
+								<h4>Mivi</h4>
 								<span>Commercial Business</span>
-							</div>							
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
 					<div class="member" data-aos="fade-up" data-aos-delay="200">
-						<img src="../static/img/team/zomato.png" class="img-fluid" alt="">
+						<img src="../static/img/team/zomato.png" class="img-fluid" alt="Zomato Brand">
 						<div class="member-info">
 							<div class="member-info-content">
 								<h4>Zomato</h4>
 								<span>Indian Startup</span>
-							</div>							
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0" data-wow-delay="0.2s">
 					<div class="member" data-aos="fade-up" data-aos-delay="300">
-						<img src="../static/img/team/lijjat.png" class="img-fluid" alt="">
+						<img src="../static/img/team/lijjat.png" class="img-fluid" alt="Lijjat Pappad Brand">
 						<div class="member-info">
 							<div class="member-info-content">
 								<h4>Lijjat Pappad</h4>
 								<span>Worker Cooperative Business</span>
-							</div>							
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0" data-wow-delay="0.3s">
 					<div class="member" data-aos="fade-up" data-aos-delay="400">
-						<img src="../static/img/team/pote.png" class="img-fluid" alt="">
+						<img src="../static/img/team/pote.png" class="img-fluid" alt="Pote Masala Brand">
 						<div class="member-info">
 							<div class="member-info-content">
 								<h4>Pote Masala</h4>
-								<span>Local Business</span>								
+								<span>Local Business</span>
 							</div>
 						</div>
 					</div>
@@ -426,64 +413,53 @@
 				<ul>
 					<li data-aos="fade-up">
 						<i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-							data-bs-target="#faq-list-1">How Can we Rely on Your Website for advertising
-							Oppurtunities?<i class="bx bx-chevron-down icon-show"></i><i
+							data-bs-target="#faq-list-1">How can we rely on SwiftLink for athlete endorsements?<i class="bx bx-chevron-down icon-show"></i><i
 								class="bx bx-chevron-up icon-close"></i></a>
 						<div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
 							<p>
-								Our company works genuinely hard for registered influencers to get maximum oppurtunities
-								on weekly basis.
+								SwiftLink works tirelessly to ensure that all endorsements are beneficial for both athletes and brands, creating genuine value.
 							</p>
 						</div>
 					</li>
 
 					<li data-aos="fade-up" data-aos-delay="100">
 						<i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-							data-bs-target="#faq-list-2" class="collapsed">What's the fees to be paid for registering?
-							<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+							data-bs-target="#faq-list-2" class="collapsed">What are the fees for registering as an athlete?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
 						<div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
 							<p>
-								Early bird offer is going on for first 10,000 influencers else you will be notified with
-								the price.
+								Currently, SwiftLink offers free registration for early adopters. Fees will apply for future registrations.
 							</p>
 						</div>
 					</li>
 
 					<li data-aos="fade-up" data-aos-delay="200">
 						<i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-							data-bs-target="#faq-list-3" class="collapsed">Is Company registration necessary for
-							advertising ? <i class="bx bx-chevron-down icon-show"></i><i
-								class="bx bx-chevron-up icon-close"></i></a>
+							data-bs-target="#faq-list-3" class="collapsed">Is company registration necessary for brand partnerships?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
 						<div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
 							<p>
-								To get the best influencer to promote your product Advertising companies have to
-								Register under "Advertiser Registration" category.
+								Yes, companies must register to access our pool of talented athletes and to ensure all partnerships are aligned and beneficial.
 							</p>
 						</div>
 					</li>
 
 					<li data-aos="fade-up" data-aos-delay="300">
 						<i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-							data-bs-target="#faq-list-4" class="collapsed">What type of companies can promote there
-							products? <i class="bx bx-chevron-down icon-show"></i><i
+							data-bs-target="#faq-list-4" class="collapsed">What type of brands can promote their products?<i class="bx bx-chevron-down icon-show"></i><i
 								class="bx bx-chevron-up icon-close"></i></a>
 						<div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
 							<p>
-								Any profit earning company, above certain economic level* can register, you just have to
-								enter your early revenue while registraion.
+								Brands that align with our athletes' values and have a strong ethical standing are welcome to register for partnerships.
 							</p>
 						</div>
 					</li>
 
 					<li data-aos="fade-up" data-aos-delay="400">
 						<i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-							data-bs-target="#faq-list-5" class="collapsed">How can the Companies rely on the way
-							influencers would promote there product? <i class="bx bx-chevron-down icon-show"></i><i
+							data-bs-target="#faq-list-5" class="collapsed">How do brands ensure athletes promote their products effectively?<i class="bx bx-chevron-down icon-show"></i><i
 								class="bx bx-chevron-up icon-close"></i></a>
 						<div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
 							<p>
-								Influencer will create there advertising content with guidlines given by Adfluencer.ltd,
-								and the content will be be shown to Advertiser befor releasing on any platform.
+								Athletes create promotional content in line with brand guidelines, which are reviewed by both SwiftLink and the brand before publication.
 							</p>
 						</div>
 					</li>
@@ -515,7 +491,7 @@
 					<div class="info-box">
 						<i class="bx bx-envelope"></i>
 						<h3>Email Us</h3>
-						<p>AdfluencerAd.com<br>FluentlyAd.com</p>
+						<p>contact@swiftlink.com<br>info@swiftlink.com</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
@@ -540,12 +516,12 @@
 				<div class="row">
 
 					<div class="col-lg-3 col-md-6 footer-contact">
-						<h3>AdFluencer</h3>
+						<h3>SwiftLink</h3>
 						<p>
 							1st Floor, Lok Centre Premises Co-op Society Ltd Above ICICI Bank, Marol Maroshi Rd, Marol,
 							Andheri East, Mumbai <br><br>
 							<strong>Phone:</strong> +91 858846718<br>
-							<strong>Email:</strong> contact@adfluencer.com<br>
+							<strong>Email:</strong> contact@swiftlink.com<br>
 						</p>
 					</div>
 
@@ -578,28 +554,28 @@
 			</div>
 		</div>
 
-		<div class="container py-4">
-			<div class="copyright">
-				&copy; Copyright <strong><span>AdFluencer</span></strong>. All Rights Reserved
+			<div class="container py-4">
+				<div class="copyright">
+					&copy; Copyright <strong><span>SwiftLink</span></strong>. All Rights Reserved
+				</div>
 			</div>
+		</footer><!-- End Footer -->
+
 		</div>
-	</footer><!-- End Footer -->
 
-	</div>
+		<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+				class="bi bi-arrow-up-short"></i></a>
 
-	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-			class="bi bi-arrow-up-short"></i></a>
+		<!-- Vendor JS Files -->
+		<script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+		<script src="{{url_for('static', filename='vendor/aos/aos.js')}}"></script>
+		<script src="{{url_for('static', filename='vendor/glightbox/js/glightbox.min.js')}}"></script>
+		<script src="{{url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+		<script src="{{url_for('static', filename='vendor/php-email-form/validate.js')}}"></script>
+		<script src="{{url_for('static', filename='vendor/swiper/swiper-bundle.min.js')}}"></script>
 
-	<!-- Vendor JS Files -->
-	<script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-	<script src="{{url_for('static', filename='vendor/aos/aos.js')}}"></script>
-	<script src="{{url_for('static', filename='vendor/glightbox/js/glightbox.min.js')}}"></script>
-	<script src="{{url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-	<script src="{{url_for('static', filename='vendor/php-email-form/validate.js')}}"></script>
-	<script src="{{url_for('static', filename='vendor/swiper/swiper-bundle.min.js')}}"></script>
+		<!-- Template Main JS File -->
+		<script src="{{url_for('static', filename='js/main.js')}}"></script>
 
-	<!-- Template Main JS File -->
-	<script src="{{url_for('static', filename='js/main.js')}}"></script>
-
-</body>
+	</body>
 </html>
