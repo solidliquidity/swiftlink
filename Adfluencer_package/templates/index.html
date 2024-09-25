@@ -2,580 +2,357 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<title>SwiftLink - Connecting Athletes with Brands and Opportunities</title>
-	<meta name="description" content="SwiftLink is a premier platform that connects elite athletes with top brands, providing unique endorsement opportunities and brand partnerships.">
-	<meta name="keywords" content="SwiftLink, Athletes, Brand Endorsement, Sports Marketing, Athlete Sponsorship, Athlete Portal, Athlete Branding">
+    <title>OpSolution - Automating Business for the Future</title>
+    <meta name="description" content="OpSolution is your trusted partner for process automation, helping SMBs streamline operations and unlock efficiency.">
+    <meta name="keywords" content="OpSolution, Automation, Consultancy, SMBs, Workflow Optimization, Process Automation, Business Efficiency">
 
-	<!-- Favicons -->
-	<link href="{{url_for('static', filename='img/Logo_1.png')}}" rel="icon">
-	<link href="{{url_for('static', filename='img/Logo_1.png')}}" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="{{url_for('static', filename='img/Logo_1.png')}}" rel="icon">
+    <link href="{{url_for('static', filename='img/Logo_1.png')}}" rel="apple-touch-icon">
 
-	<!-- Google Fonts -->
-	<link
-		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
-		rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
-	<!-- Vendor CSS Files -->
-	<link href="{{url_for('static', filename='vendor/aos/aos.css')}}" rel="stylesheet">
-	<link href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-	<link href="{{url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
-	<link href="{{url_for('static', filename='vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-	<link href="{{url_for('static', filename='vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
-	<link href="{{url_for('static', filename='vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="{{url_for('static', filename='vendor/aos/aos.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
-	<!-- Template Main CSS File -->
-	<link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
 
-	<!-- Including jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <!-- Including jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
-	<!-- Including Bootstrap JS -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Including Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-	<div class="wrap">
-
-		<!-- ======= Header ======= -->
-		<header id="header" class="d-flex align-items-center">
-			<div class="container d-flex align-items-center justify-content-between">
-
-				<div class="logo">
-					<h1 class="text-light"><a href="{{url_for('views.home')}}"><span>SwiftLink</span></a></h1>
-				</div>
-
-				<nav id="navbar" class="navbar">
-					<ul>
-						<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-						<li><a class="nav-link scrollto" href="#about">About</a></li>
-						<li><a class="nav-link scrollto" href="#services">Services</a></li>
-						<li><a class="nav-link scrollto" href="#team">Brands</a></li>
-						<li><a href="{{url_for('views.login')}}">Login/Sign-up</a></li>
-						<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-					</ul>
-					<i class="bi bi-list mobile-nav-toggle"></i>
-				</nav><!-- .navbar -->
-
-			</div>
-		</header><!-- End Header -->
-
-		<!-- ======= Hero Section ======= -->
-		<section id="hero">
-			{% for msg in get_flashed_messages() %}
-			<div class="alert alert-warning alert-dismissible fade show" role="alert">
-				{{msg}}
-				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-			</div>
-			{% endfor %}
-
-			<script type="text/javascript">
-				setTimeout(function () {
-					// Closing the alert
-					$('.alert').alert('close');
-				}, 3000);
-			</script>
-
-			<div class="hero-container" data-aos="fade-up">
-				<h1>SWIFTLINK</h1>
-				<p style="color: white;">Connecting Athletes to Opportunities for Success Beyond Sport.</p>
-				<a href="#about" class="btn-get-started scrollto">Get Started</a>
-			</div>
-			
-		</section><!-- End Hero -->
-
-		<main id="main">
-
-			<!-- ======= About Section ======= -->
-			<section id="about" class="about">
-				<div class="container">
-
-					<div class="row">
-						<div style="background-image: url(../static/img/jeremy-bishop-surfing-unsplash.jpg)" data-aos="fade-right"
-							class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
-						</div>
-						<div class="col-xl-7 pt-4 pt-lg-0 d-flex align-items-stretch">
-							<div class="content d-flex flex-column justify-content-center" data-aos="fade-left">
-								<h3>Bridging Athletes and Brands</h3>
-								<p>
-									SwiftLink connects athletes with brands, unlocking unique endorsement and partnership opportunities that leverage the power of sports.
-								</p>
-								<div class="row">
-									<div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
-										<i class="bx bx-receipt"></i>
-										<h4>Regular Updates</h4>
-										<p>Athletes receive regular updates on new brand partnership opportunities.</p>
-									</div>
-									<div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
-										<i class="bx bx-cube-alt"></i>
-										<h4>Top Brands</h4>
-										<p>Collaborate with leading brands in the industry.</p>
-									</div>
-									<div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
-										<i class="bx bx-images"></i>
-										<h4>Tailored Partnerships</h4>
-										<p>Brands are matched with athletes whose values align with their message.</p>
-									</div>
-									<div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="400">
-										<i class="bx bx-shield"></i>
-										<h4>Verified Deals</h4>
-										<p>All partnerships are verified for authenticity and transparency.</p>
-									</div>
-								</div>
-							</div><!-- End .content-->
-						</div>
-					</div>
-
-				</div>
-			</section><!-- End About Section -->
-
-			<!-- ======= Clients Section ======= -->
-			<section id="clients" class="clients">
-				<div class="container">
-
-					<div class="row">
-
-						<div class="col-lg-2 col-md-4 col-6">
-							<img src="../static/img/clients/coin.png" class="img-fluid" alt="CoinBrand Logo" data-aos="zoom-in">
-						</div>
-
-						<div class="col-lg-2 col-md-4 col-6">
-							<img src="../static/img/clients/coinswitch.jfif" class="img-fluid" alt="CoinSwitch Logo" data-aos="zoom-in" data-aos-delay="100">
-						</div>
-
-						<div class="col-lg-2 col-md-4 col-6">
-							<img src="../static/img/clients/flo.png" class="img-fluid" alt="FloBrand Logo" data-aos="zoom-in" data-aos-delay="200">
-						</div>
-
-						<div class="col-lg-2 col-md-4 col-6">
-							<img src="../static/img/clients/mama earth.png" class="img-fluid" alt="Mama Earth Logo" data-aos="zoom-in" data-aos-delay="300">
-						</div>
-
-						<div class="col-lg-2 col-md-4 col-6">
-							<img src="../static/img/clients/wow.png" class="img-fluid" alt="WOW Products Logo" data-aos="zoom-in" data-aos-delay="400">
-						</div>
-
-						<div class="col-lg-2 col-md-4 col-6">
-							<img src="../static/img/clients/labdoor.png" class="img-fluid" alt="Labdoor Logo" data-aos="zoom-in" data-aos-delay="500">
-						</div>
-
-					</div>
-
-				</div>
-			</section><!-- End Clients Section -->
-
-			<!-- ======= Features Section ======= -->
-			<section id="features" class="features">
-				<div class="container">
-
-					<div class="row">
-						<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-							<div class="card" data-aos="fade-up">
-								<img src="../static/img/features-1.jpg" class="card-img-top" alt="SwiftLink Mission">
-								<div class="card-body">
-									<i class="bx bx-tachometer"></i>
-									<h5 class="card-title"><a href="#">Our Mission</a></h5>
-									<p class="card-text">Empowering athletes to connect with brands and unlock new revenue streams through strategic partnerships.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 mt-5 mt-md-0 d-flex align-items-stretch">
-							<div class="card" data-aos="fade-up" data-aos-delay="150">
-								<img src="../static/img/features-2.jpg" class="card-img-top" alt="SwiftLink Plan">
-								<div class="card-body">
-									<i class="bx bx-file"></i>
-									<h5 class="card-title"><a href="#">Our Plan</a></h5>
-									<p class="card-text">Providing athletes with opportunities to collaborate with brands that align with their personal brand and values.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 mt-5 mt-lg-0 d-flex align-items-stretch">
-							<div class="card" data-aos="fade-up" data-aos-delay="300">
-								<img src="../static/img/features-3.jpg" class="card-img-top" alt="SwiftLink Vision">
-								<div class="card-body">
-									<i class="bx bx-show"></i>
-									<h5 class="card-title"><a href="#">Our Vision</a></h5>
-									<p class="card-text">To become the leading platform where athletes and brands collaborate for mutual growth and success.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</section><!-- End Features Section -->
-
-			<!-- ======= Cta Section ======= -->
-			<section id="cta" class="cta">
-				<div class="container">
-
-					<div class="text-center" data-aos="zoom-in">
-						<h3>Get in Touch</h3>
-						<p>Interested in partnering with top athletes? Contact us today to explore the opportunities.</p>
-						<a class="cta-btn" href="#contact">Contact</a>
-					</div>
-
-				</div>
-			</section><!-- End Cta Section -->
-
-			<!-- ======= Services Section ======= -->
-			<section id="services" class="services">
-				<div class="container">
-
-					<div class="section-title" data-aos="fade-down">
-						<span>Why Choose SwiftLink?</span>
-						<h2>Why Choose SwiftLink?</h2>
-					</div>
-
-					<div class="row">
-						<div class="col-md-6">
-							<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-								<i class="bi bi-briefcase" style="color: #0ea5e0;"></i>
-								<h4><a href="#">Verified Profiles</a></h4>
-								<p>We ensure that all athlete and brand profiles are authenticated for credibility.</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-								<i class="bi bi-card-checklist" style="color: #07cc70;"></i>
-								<h4><a href="#">Regular Opportunities</a></h4>
-								<p>New partnership opportunities are available every week.</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-								<i class="bi bi-bar-chart" style="color: #e40373;"></i>
-								<h4><a href="#">Exponential Growth</a></h4>
-								<p>Boost your brand’s visibility and sales with strategic athlete partnerships.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-	</div>
-	</section><!-- End Services Section -->
-
-	<!-- ======= Testimonials Section ======= -->
-	<section id="testimonials" class="testimonials">
-		<div class="container position-relative">
-
-			<div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-				<div class="swiper-wrapper">
-
-					<div class="swiper-slide">
-						<div class="testimonial-item">
-							<img src="../static/img/testimonials/ash.jfif" class="testimonial-img" alt="Athlete testimonial from Ashish Chanchlani">
-							<h3>Ashish Chanchlani</h3>
-							<h4>Professional Athlete & Influencer</h4>
-							<p>
-								<i class="bx bxs-quote-alt-left quote-icon-left"></i>
-								SwiftLink connected me with brands that align with my values, creating successful partnerships.
-								<i class="bx bxs-quote-alt-right quote-icon-right"></i>
-							</p>
-						</div>
-					</div><!-- End testimonial item -->
-
-					<div class="swiper-slide">
-						<div class="testimonial-item">
-							<img src="../static/img/testimonials/bhuv.jfif" class="testimonial-img" alt="Athlete testimonial from Bhuvan Bam">
-							<h3>Bhuvan Bam</h3>
-							<h4>Sports Enthusiast & Influencer</h4>
-							<p>
-								<i class="bx bxs-quote-alt-left quote-icon-left"></i>
-								SwiftLink made it easy to find the right brands to work with, boosting my career.
-								<i class="bx bxs-quote-alt-right quote-icon-right"></i>
-							</p>
-						</div>
-					</div><!-- End testimonial item -->
-
-					<div class="swiper-slide">
-						<div class="testimonial-item">
-							<img src="../static/img/testimonials/praj.jfif" class="testimonial-img" alt="Athlete testimonial from Prajakta Koli">
-							<h3>Prajakta Koli</h3>
-							<h4>Athlete & Content Creator</h4>
-							<p>
-								<i class="bx bxs-quote-alt-left quote-icon-left"></i>
-								Thanks to SwiftLink, I’ve partnered with brands that enhance my public image and professional reach.
-								<i class="bx bxs-quote-alt-right quote-icon-right"></i>
-							</p>
-						</div>
-					</div><!-- End testimonial item -->
-
-					<div class="swiper-slide">
-						<div class="testimonial-item">
-							<img src="../static/img/testimonials/nisha.jfif" class="testimonial-img" alt="Athlete testimonial from Nisha Madhulika">
-							<h3>Nisha Madhulika</h3>
-							<h4>Renowned Athlete & Mentor</h4>
-							<p>
-								<i class="bx bxs-quote-alt-left quote-icon-left"></i>
-								SwiftLink has been instrumental in connecting me with top-tier brands for long-term partnerships.
-								<i class="bx bxs-quote-alt-right quote-icon-right"></i>
-							</p>
-						</div>
-					</div><!-- End testimonial item -->
-
-					<div class="swiper-slide">
-						<div class="testimonial-item">
-							<img src="../static/img/testimonials/gau.jfif" class="testimonial-img" alt="Athlete testimonial from Gaurav Taneja">
-							<h3>Gaurav Taneja</h3>
-							<h4>Professional Athlete & Vlogger</h4>
-							<p>
-								<i class="bx bxs-quote-alt-left quote-icon-left"></i>
-								With SwiftLink, I’ve found perfect brand partners that resonate with my athletic journey.
-								<i class="bx bxs-quote-alt-right quote-icon-right"></i>
-							</p>
-						</div>
-					</div><!-- End testimonial item -->
-
-				</div>
-				<div class="swiper-pagination"></div>
-			</div>
-
-		</div>
-	</section><!-- End Testimonials Section -->
-
-	<!-- ======= Team Section ======= -->
-	<section id="team" class="team">
-		<div class="container">
-
-			<div class="section-title" data-aos="fade-down">
-				<span>Brands</span>
-				<h2>Brands</h2>
-				<p>These are some of the top brands partnered with SwiftLink.</p>
-			</div>
-
-			<div class="row">
-
-				<div class="col-xl-3 col-lg-4 col-md-6">
-					<div class="member" data-aos="fade-up" data-aos-delay="100">
-						<img src="../static/img/team/mivi2.png" class="img-fluid" alt="Mivi Brand">
-						<div class="member-info">
-							<div class="member-info-content">
-								<h4>Mivi</h4>
-								<span>Commercial Business</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
-					<div class="member" data-aos="fade-up" data-aos-delay="200">
-						<img src="../static/img/team/zomato.png" class="img-fluid" alt="Zomato Brand">
-						<div class="member-info">
-							<div class="member-info-content">
-								<h4>Zomato</h4>
-								<span>Indian Startup</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0" data-wow-delay="0.2s">
-					<div class="member" data-aos="fade-up" data-aos-delay="300">
-						<img src="../static/img/team/lijjat.png" class="img-fluid" alt="Lijjat Pappad Brand">
-						<div class="member-info">
-							<div class="member-info-content">
-								<h4>Lijjat Pappad</h4>
-								<span>Worker Cooperative Business</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0" data-wow-delay="0.3s">
-					<div class="member" data-aos="fade-up" data-aos-delay="400">
-						<img src="../static/img/team/pote.png" class="img-fluid" alt="Pote Masala Brand">
-						<div class="member-info">
-							<div class="member-info-content">
-								<h4>Pote Masala</h4>
-								<span>Local Business</span>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-	</section><!-- End Team Section -->
-
-	<!-- ======= F.A.Q Section ======= -->
-	<section id="faq" class="faq">
-		<div class="container">
-
-			<div class="section-title" data-aos="fade-down">
-				<span>F.A.Q</span>
-				<h2>F.A.Q</h2>
-				<p>Frequently Asked Questions</p>
-			</div>
-
-			<div class="faq-list">
-				<ul>
-					<li data-aos="fade-up">
-						<i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-							data-bs-target="#faq-list-1">How can we rely on SwiftLink for athlete endorsements?<i class="bx bx-chevron-down icon-show"></i><i
-								class="bx bx-chevron-up icon-close"></i></a>
-						<div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-							<p>
-								SwiftLink works tirelessly to ensure that all endorsements are beneficial for both athletes and brands, creating genuine value.
-							</p>
-						</div>
-					</li>
-
-					<li data-aos="fade-up" data-aos-delay="100">
-						<i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-							data-bs-target="#faq-list-2" class="collapsed">What are the fees for registering as an athlete?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-						<div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-							<p>
-								Currently, SwiftLink offers free registration for early adopters. Fees will apply for future registrations.
-							</p>
-						</div>
-					</li>
-
-					<li data-aos="fade-up" data-aos-delay="200">
-						<i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-							data-bs-target="#faq-list-3" class="collapsed">Is company registration necessary for brand partnerships?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-						<div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-							<p>
-								Yes, companies must register to access our pool of talented athletes and to ensure all partnerships are aligned and beneficial.
-							</p>
-						</div>
-					</li>
-
-					<li data-aos="fade-up" data-aos-delay="300">
-						<i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-							data-bs-target="#faq-list-4" class="collapsed">What type of brands can promote their products?<i class="bx bx-chevron-down icon-show"></i><i
-								class="bx bx-chevron-up icon-close"></i></a>
-						<div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-							<p>
-								Brands that align with our athletes' values and have a strong ethical standing are welcome to register for partnerships.
-							</p>
-						</div>
-					</li>
-
-					<li data-aos="fade-up" data-aos-delay="400">
-						<i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-							data-bs-target="#faq-list-5" class="collapsed">How do brands ensure athletes promote their products effectively?<i class="bx bx-chevron-down icon-show"></i><i
-								class="bx bx-chevron-up icon-close"></i></a>
-						<div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-							<p>
-								Athletes create promotional content in line with brand guidelines, which are reviewed by both SwiftLink and the brand before publication.
-							</p>
-						</div>
-					</li>
-
-				</ul>
-			</div>
-
-		</div>
-	</section><!-- End F.A.Q Section -->
-
-	<!-- ======= Contact Us Section ======= -->
-	<section id="contact" class="contact">
-		<div class="container">
-
-			<div class="section-title" data-aos="fade-down">
-				<span>Contact Us</span>
-				<h2>Contact Us</h2>
-			</div>
-
-			<div class="row justify-content-center">
-				<div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="100">
-					<div class="info-box">
-						<i class="bx bx-map"></i>
-						<h3>Our Address</h3>
-						<p>FCRIT Vashi</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-					<div class="info-box">
-						<i class="bx bx-envelope"></i>
-						<h3>Email Us</h3>
-						<p>contact@swiftlink.com<br>info@swiftlink.com</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-					<div class="info-box">
-						<i class="bx bx-phone-call"></i>
-						<h3>Call Us</h3>
-						<p>+91 986521493<br>+91 865296415</p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section><!-- End Contact Us Section -->
-
-	</main><!-- End #main -->
-
-	<!-- ======= Footer ======= -->
-	<footer id="footer">
-		
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-lg-3 col-md-6 footer-contact">
-						<h3>SwiftLink</h3>
-						<p>
-							1st Floor, Lok Centre Premises Co-op Society Ltd Above ICICI Bank, Marol Maroshi Rd, Marol,
-							Andheri East, Mumbai <br><br>
-							<strong>Phone:</strong> +91 858846718<br>
-							<strong>Email:</strong> contact@swiftlink.com<br>
-						</p>
-					</div>
-
-					<div class="col-lg-3 col-md-6 footer-links">
-						<h4>Useful Links</h4>
-						<ul>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-						</ul>
-					</div>
-
-					<div class="col-lg-3 col-md-6 footer-links">
-					</div>
-					<div class="col-lg-3 col-md-6 footer-links">
-						<h4>Our Social Networks</h4>
-
-						<div class="social-links mt-3">
-							<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-							<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-							<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-							<a href="#" class="github"><i class="bx bxl-github"></i></a>
-							<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-			<div class="container py-4">
-				<div class="copyright">
-					&copy; Copyright <strong><span>SwiftLink</span></strong>. All Rights Reserved
-				</div>
-			</div>
-		</footer><!-- End Footer -->
-
-		</div>
-
-		<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-				class="bi bi-arrow-up-short"></i></a>
-
-		<!-- Vendor JS Files -->
-		<script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-		<script src="{{url_for('static', filename='vendor/aos/aos.js')}}"></script>
-		<script src="{{url_for('static', filename='vendor/glightbox/js/glightbox.min.js')}}"></script>
-		<script src="{{url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-		<script src="{{url_for('static', filename='vendor/php-email-form/validate.js')}}"></script>
-		<script src="{{url_for('static', filename='vendor/swiper/swiper-bundle.min.js')}}"></script>
-
-		<!-- Template Main JS File -->
-		<script src="{{url_for('static', filename='js/main.js')}}"></script>
-
-	</body>
+    <div class="wrap">
+
+        <!-- ======= Header ======= -->
+        <header id="header" class="d-flex align-items-center">
+            <div class="container d-flex align-items-center justify-content-between">
+
+                <div class="logo">
+                    <h1 class="text-light"><a href="{{url_for('views.home')}}"><span>OpSolution</span></a></h1>
+                </div>
+
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                        <li><a class="nav-link scrollto" href="#about">About</a></li>
+                        <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                        <li><a class="nav-link scrollto" href="#team">Our Team</a></li>
+                        <li><a href="{{url_for('views.login')}}">Login/Sign-up</a></li>
+                        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav><!-- .navbar -->
+
+            </div>
+        </header><!-- End Header -->
+
+        <!-- ======= Hero Section ======= -->
+        <section id="hero">
+            {% for msg in get_flashed_messages() %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{msg}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+
+            <script type="text/javascript">
+                setTimeout(function () {
+                    // Closing the alert
+                    $('.alert').alert('close');
+                }, 3000);
+            </script>
+
+            <div class="hero-container" data-aos="fade-up">
+                <h1>OpSolution</h1>
+                <p style="color: white;">Your partner in automating business processes</p>
+                <a href="#about" class="btn-get-started scrollto">Discover More</a>
+            </div>
+        </section><!-- End Hero -->
+
+        <main id="main">
+
+            <!-- ======= About Section ======= -->
+            <section id="about" class="about">
+                <div class="container">
+                    <div class="row">
+                        <div style="background-image: url(../static/img/automation.jpg)" data-aos="fade-right"
+                            class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
+                        </div>
+                        <div class="col-xl-7 pt-4 pt-lg-0 d-flex align-items-stretch">
+                            <div class="content d-flex flex-column justify-content-center" data-aos="fade-left">
+                                <h3>Driving Business Efficiency with OpSolution</h3>
+                                <p>
+                                    OpSolution helps businesses automate processes and reduce operational friction, allowing them to focus on growth.
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+                                        <i class="bx bx-cog"></i>
+                                        <h4>Automation Strategy</h4>
+                                        <p>Design and implement tailored automation workflows to meet your business needs.</p>
+                                    </div>
+                                    <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+                                        <i class="bx bx-chart"></i>
+                                        <h4>Process Optimization</h4>
+                                        <p>Streamline operations and reduce bottlenecks for improved efficiency.</p>
+                                    </div>
+                                    <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+                                        <i class="bx bx-shield"></i>
+                                        <h4>Security and Compliance</h4>
+                                        <p>Ensure your automated processes are secure and meet industry regulations.</p>
+                                    </div>
+                                    <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="400">
+                                        <i class="bx bx-rocket"></i>
+                                        <h4>Growth Acceleration</h4>
+                                        <p>Free up resources and time to focus on business growth.</p>
+                                    </div>
+                                </div>
+                            </div><!-- End .content-->
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End About Section -->
+
+            <!-- ======= Services Section ======= -->
+            <section id="services" class="services">
+                <div class="container">
+                    <div class="section-title" data-aos="fade-down">
+                        <span>Our Expertise</span>
+                        <h2>Services We Provide</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                                <i class="bi bi-code" style="color: #0ea5e0;"></i>
+                                <h4><a href="#">Custom Automation Development</a></h4>
+                                <p>We develop custom automation solutions that fit your exact business requirements.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                                <i class="bi bi-cloud-arrow-up" style="color: #07cc70;"></i>
+                                <h4><a href="#">Cloud Integration</a></h4>
+                                <p>Optimize business processes through seamless cloud integration.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                                <i class="bi bi-diagram-3" style="color: #e40373;"></i>
+                                <h4><a href="#">Workflow Automation</a></h4>
+                                <p>Automate repetitive tasks, freeing up resources to focus on growth initiatives.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                                <i class="bi bi-shield-shaded" style="color: #ffc107;"></i>
+                                <h4><a href="#">Security and Compliance</a></h4>
+                                <p>Ensure automated systems adhere to industry security standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End Services Section -->
+
+            <!-- ======= Clients Section ======= -->
+            <section id="clients" class="clients">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="../static/img/clients/client-1.png" class="img-fluid" alt="" data-aos="zoom-in">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="../static/img/clients/client-2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="../static/img/clients/client-3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="../static/img/clients/client-4.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="../static/img/clients/client-5.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="../static/img/clients/client-6.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+                        </div>
+
+                    </div>
+                </div>
+            </section><!-- End Clients Section -->
+
+            <!-- ======= Features Section ======= -->
+            <section id="features" class="features">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="card" data-aos="fade-up">
+                                <img src="../static/img/features-1.jpg" class="card-img-top" alt="Feature 1">
+                                <div class="card-body">
+                                    <i class="bx bx-tachometer"></i>
+                                    <h5 class="card-title"><a href="#">Our Mission</a></h5>
+                                    <p class="card-text">We aim to bring process automation to SMBs and help them unlock their potential.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="card" data-aos="fade-up" data-aos-delay="150">
+                                <img src="../static/img/features-2.jpg" class="card-img-top" alt="Feature 2">
+                                <div class="card-body">
+                                    <i class="bx bx-cloud-upload"></i>
+                                    <h5 class="card-title"><a href="#">Our Plan</a></h5>
+                                    <p class="card-text">We design and implement scalable solutions that grow with your business.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                                <img src="../static/img/features-3.jpg" class="card-img-top" alt="Feature 3">
+                                <div class="card-body">
+                                    <i class="bx bx-rocket"></i>
+                                    <h5 class="card-title"><a href="#">Our Vision</a></h5>
+                                    <p class="card-text">To be the leading automation partner for SMBs, empowering businesses to achieve operational excellence.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End Features Section -->
+
+            <!-- ======= Call to Action Section ======= -->
+            <section id="cta" class="cta">
+                <div class="container">
+                    <div class="text-center" data-aos="zoom-in">
+                        <h3>Optimize Your Business Today</h3>
+                        <p>Let OpSolution handle your process automation so you can focus on growth.</p>
+                        <a class="cta-btn" href="#contact">Get In Touch</a>
+                    </div>
+                </div>
+            </section><!-- End Call to Action Section -->
+
+            <!-- ======= Testimonials Section ======= -->
+            <section id="testimonials" class="testimonials">
+                <div class="container position-relative">
+
+                    <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <img src="../static/img/testimonials/client-1.jpg" class="testimonial-img" alt="">
+                                    <h3>John Doe</h3>
+                                    <h4>CEO at InnovateCorp</h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        OpSolution transformed the way we work. Automation saved us hundreds of hours each month.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div><!-- End testimonial item -->
+
+                            <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <img src="../static/img/testimonials/client-2.jpg" class="testimonial-img" alt="">
+                                    <h3>Jane Smith</h3>
+                                    <h4>Operations Manager at StartUpHub</h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        The team at OpSolution really understood our needs. Their automation strategy has boosted our efficiency dramatically.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div><!-- End testimonial item -->
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </section><!-- End Testimonials Section -->
+
+            <!-- ======= Contact Section ======= -->
+            <section id="contact" class="contact">
+                <div class="container">
+
+                    <div class="section-title" data-aos="fade-down">
+                        <span>Contact Us</span>
+                        <h2>Get in Touch</h2>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="100">
+                            <div class="info-box">
+                                <i class="bx bx-map"></i>
+                                <h3>Our Office</h3>
+                                <p>456 Efficiency Blvd, Automation City</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <div class="info-box">
+                                <i class="bx bx-envelope"></i>
+                                <h3>Email Us</h3>
+                                <p>info@opsolution.com<br>support@opsolution.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                            <div class="info-box">
+                                <i class="bx bx-phone-call"></i>
+                                <h3>Call Us</h3>
+                                <p>+1 123 456 7890<br>+1 123 456 7891</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section><!-- End Contact Section -->
+
+        </main><!-- End #main -->
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="container py-4">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>OpSolution</span></strong>. All Rights Reserved
+                </div>
+            </div>
+        </footer><!-- End Footer -->
+
+    </div>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/aos/aos.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/glightbox/js/glightbox.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/php-email-form/validate.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/swiper/swiper-bundle.min.js')}}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+</body>
 </html>

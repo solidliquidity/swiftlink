@@ -7,7 +7,9 @@ POSTGRES_USERNAME = 'yash' ## CHANGE THIS TO YOUR PANOPLY/POSTGRES USERNAME
 POSTGRES_PASSWORD = '1234' ## CHANGE THIS TO YOUR PANOPLY/POSTGRES PASSWORD
 POSTGRES_DBNAME = 'adfluencer' ## CHANGE THIS TO YOUR DATABASE NAME
 # A long string that contains the necessary Postgres login information
-postgres_str = ('postgresql://{username}:{password}@{ipaddress}:{port}/{dbname}'
+postgres_str = ('postgresql://{postrgres}:{swiftlink}@{localhost}:{5432}/{adfluencer}'
+                
+# SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:your_password@localhost/adfluencer'
 .format(username=POSTGRES_USERNAME,
 password=POSTGRES_PASSWORD,
 ipaddress=POSTGRES_ADDRESS,
