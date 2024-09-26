@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "/Users/solidliquidity/Downloads/projects/swiftlink/Adfluencer_package/templates/index.html"
+            "file": "/Users/solidliquidity/Downloads/projects/swiftlink/cem_package/templates/index.html"
         }
     ]
 }

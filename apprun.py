@@ -1,4 +1,4 @@
-from Adfluencer_package import create_app
+from cem_package import create_app
 
 app = create_app()
 
